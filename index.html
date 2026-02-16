@@ -511,6 +511,20 @@
   </section>
 
   <main class="container is-max-desktop px-4 py-5">
+    <section class="mb-5" id="framework-overview">
+      <figure class="figure teaser-figure">
+        <img src="static/images/framework-radar.svg" alt="Overview of the HOG-Diff framework and its performance" />
+        <figcaption>
+          Overview of the <strong>HOG-Diff</strong> framework and its performance.
+          (<strong>Left</strong>) The dashed trajectory above illustrates the classical generation process, where graphs rapidly
+          degrade into structureless randomness. In contrast, as shown in the coloured region below, HOG-Diff adopts
+          a coarse-to-fine generation curriculum via a diffusion bridge, explicitly learning higher-order structures
+          during intermediate steps. (<strong>Middle</strong> and <strong>right</strong>) Relative improvements over prior
+          state-of-the-art on pairwise and higher-order topological metrics.
+        </figcaption>
+      </figure>
+    </section>
+
     <section class="section-card mb-5" id="abstract">
       <h2 class="section-title">Abstract</h2>
       <p class="lead">
@@ -522,22 +536,7 @@ HOG-Diff follows a coarse-to-fine generation curriculum, guided by higher-order 
 We further prove that our model admits stronger theoretical guarantees than classical diffusion frameworks.
 Extensive experiments across eight graph generation benchmarks, spanning diverse domains and including large-scale settings, demonstrate the scalability of our method and its superior performance on both pairwise and higher-order topological metrics.
       </p>
-    </section>
-
-    <section class="section-card mb-5" id="framework-overview">
-      <h2 class="section-title">Overview</h2>
-      <figure class="figure">
-        <img src="static/images/framework-radar.svg" alt="Overview of the HOG-Diff framework and its performance" />
-        <figcaption>
-          Overview of the <strong>HOG-Diff</strong> framework and its performance.
-          (<strong>Left</strong>) The dashed trajectory above illustrates the classical generation process, where graphs rapidly
-          degrade into structureless randomness. In contrast, as shown in the coloured region below, HOG-Diff adopts
-          a coarse-to-fine generation curriculum via a diffusion bridge, explicitly learning higher-order structures
-          during intermediate steps. (<strong>Middle</strong> and <strong>right</strong>) Relative improvements over prior
-          state-of-the-art on pairwise and higher-order topological metrics.
-        </figcaption>
-      </figure>
-      <h3 class="section-title">Core Contributions</h3>
+      <h2 class="section-title mt-5">Core Contributions</h2>
       <div class="content">
         <ul>
           <li>Introduces cell complex filtering to extract higher-order skeletons from graphs as informative generation guides.</li>
@@ -592,7 +591,7 @@ Extensive experiments across eight graph generation benchmarks, spanning diverse
       <div class="misc-box">
         <div class="columns is-vcentered is-multiline">
           <div class="column is-one-third has-text-centered">
-            <img class="misc-paper-img" src="static/images/paper-cover.png" alt="HOG-Diff paper cover" />
+            <img class="misc-paper-img" src="static/images/paper-cover.png?v=2" alt="HOG-Diff paper cover" />
           </div>
           <div class="column is-two-thirds">
             <p class="lead" style="margin-bottom: 0.85rem;">
