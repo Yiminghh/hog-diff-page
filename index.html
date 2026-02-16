@@ -514,13 +514,13 @@
     <section class="section-card mb-5" id="abstract">
       <h2 class="section-title">Abstract</h2>
       <p class="lead">
-        Graph generation is a critical yet challenging task, as empirical analyses require a deep understanding of
-        complex, non-Euclidean structures. Diffusion models have recently made significant achievements in graph
-        generation, but these models are typically adapted from image generation frameworks and overlook inherent
-        higher-order topology. HOG-Diff (Higher-order Guided Diffusion) introduces a principled coarse-to-fine
-        curriculum guided by higher-order topology and implemented via diffusion bridges. The paper further proves
-        stronger theoretical guarantees than classical diffusion frameworks, and extensive experiments across eight
-        graph-generation benchmarks show superior performance on both pairwise and higher-order topological metrics.
+        Graph generation is a critical yet challenging task, as empirical analyses require a deep understanding of complex, non-Euclidean structures. 
+Diffusion models have recently made significant achievements in graph generation, but these models are typically adapted from image generation frameworks and overlook inherent higher-order topology, limiting their ability to capture graph topology.
+In this work, we propose <strong>Higher-order Guided
+Diffusion (HOG-Diff)</strong>, a principled framework that progressively generates plausible graphs with inherent topological structures.
+HOG-Diff follows a coarse-to-fine generation curriculum, guided by higher-order topology and implemented via diffusion bridges.
+We further prove that our model admits stronger theoretical guarantees than classical diffusion frameworks.
+Extensive experiments across eight graph generation benchmarks, spanning diverse domains and including large-scale settings, demonstrate the scalability of our method and its superior performance on both pairwise and higher-order topological metrics.
       </p>
     </section>
 
